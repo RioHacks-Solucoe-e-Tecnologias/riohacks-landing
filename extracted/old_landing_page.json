@@ -1,0 +1,110 @@
+{
+  "source_file": "old_landing_page.html",
+  "title": "Riohacks – Soluções tecnológicas",
+  "language": "pt-BR",
+  "sections": [
+    {
+      "name": "hero",
+      "texts": {
+        "logo_alt": "",
+        "headlines": [
+          "Soluções de Negócios & Inovação & Tecnologia"
+        ],
+        "sublines": [
+          "Alavanque seu Negócio",
+          "Otimize seus Processos",
+          "Aumente seu Faturamento"
+        ],
+        "paragraphs": [
+          "Na RioHacks utilizamos tecnologia de ponta e estratégias inovadoras para oferecer soluções diferenciadas. Não se limite ao comum! Conte conosco para transformar seu negócio ou projeto."
+        ]
+      }
+    },
+    {
+      "name": "marquee",
+      "texts": {
+        "headline": "+ MAIS CLIENTES + RESULTADOS + FATURAMENTO + MAIS CLIENTES + RESULTADOS + FATURAMENTO + MAIS CLIENTES + RESULTADOS + FATURAMENTO + MAIS CLIENTES + RESULTADOS + FATURAMENTO"
+      }
+    },
+    {
+      "name": "intro_headings",
+      "texts": {
+        "headings": [
+          "Entendemos suas necessidades",
+          "Descubra como podemos impulsionar seu negócio"
+        ]
+      }
+    },
+    {
+      "name": "services",
+      "texts": {
+        "items": [
+          "Desenvolvimento de Sistemas sob Medida",
+          "Integração de Sistemas",
+          "Consultoria em Transformação Digital",
+          "Gestão de tráfego pago (Google e Meta)",
+          "Soluções em Inteligência Artificial e Machine Learning",
+          "Desenvolvimento de Sites e E-commerce",
+          "Chatbot e CRM Personalizados",
+          "Capacitação e Treinamento Personalizados",
+          "Realização de Eventos Técnicos"
+        ]
+      }
+    },
+    {
+      "name": "ctas",
+      "texts": {
+        "buttons": [
+          "Falar no WhatsApp",
+          "Saiba Como Podemos Ajudar",
+          "Solicitar uma proposta"
+        ]
+      }
+    },
+    {
+      "name": "clients",
+      "texts": {
+        "heading": "Nossos Clientes",
+        "client_links": [
+          "https://aetha.com.br",
+          "https://casadoivo.com.br",
+          "https://lbin.com.br",
+          "https://mirantelp.com.br",
+          "https://nossasaude.site",
+          "https://rederiba.org",
+          "https://riohacks.com.br",
+          "https://www.instagram.com/correr_ia"
+        ]
+      }
+    },
+    {
+      "name": "cta_section",
+      "texts": {
+        "heading": "Está pronto para impulsionar seu negócio?",
+        "paragraph": "Na RioHacks, oferecemos soluções tecnológicas personalizadas que atendem às necessidades específicas da sua empresa. Entre em contato com nossa equipe e descubra como podemos ajudar sua empresa a crescer, inovar e se destacar no mercado. Solicite agora um orçamento sem compromisso e descubra o que a tecnologia pode fazer pelo seu negócio!",
+        "button": "Solicitar uma proposta",
+        "button_link": "https://wa.me/5593991963307"
+      }
+    },
+    {
+      "name": "contact",
+      "texts": {
+        "heading": "Nos contate em:",
+        "email": "contato@riohacks.com.br",
+        "heading2": "Nos encontre em:",
+        "address": "Av. Mendonça Furtado, 2417, Aldeia, Santarém/PA",
+        "map_embed_url": "https://maps.google.com/maps?q=Av.%20Mendon%C3%A7a%20Furtado%2C%202417%2C%20Aldeia%2C%20Santar%C3%A9m%2FPA&t=m&z=16&output=embed&iwloc=near"
+      }
+    },
+    {
+      "name": "footer",
+      "texts": {
+        "copyright": "Copyright © 2025 Todos os Direitos Reservados"
+      }
+    }
+  ],
+  "metadata": {
+    "normalized": true,
+    "last_normalized": "2025-08-14"
+  }
+}
