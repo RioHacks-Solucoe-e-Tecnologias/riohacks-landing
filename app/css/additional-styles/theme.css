@@ -80,3 +80,19 @@
     transform: translate3d(10px, 0, 0) scale(1.2);
   }
 }
+
+/* Marquee animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  display: inline-block;
+  animation: marquee 15s linear infinite;
+}
