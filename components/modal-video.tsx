@@ -5,6 +5,7 @@ import type { StaticImageData } from "next/image";
 import { Dialog, DialogBackdrop, DialogPanel } from "@headlessui/react";
 import Image from "next/image";
 import SecondaryIllustration from "@/public/images/secondary-illustration.svg";
+import BackgroundImage from "@/public/images/background.jpg";
 
 interface ModalVideoProps {
   thumb: StaticImageData;
@@ -57,7 +58,7 @@ export default function ModalVideo({
         <figure className="relative overflow-hidden rounded-2xl before:absolute before:inset-0 before:-z-10 before:bg-linear-to-br before:from-gray-900 before:via-indigo-500/20 before:to-gray-900">
           <Image
             className="opacity-50 grayscale"
-            src={thumb}
+            src={BackgroundImage}
             width={thumbWidth}
             height={thumbHeight}
             priority
@@ -88,15 +89,15 @@ export default function ModalVideo({
                   y2={20}
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stopColor="#6366F1" />
-                  <stop offset={1} stopColor="#6366F1" stopOpacity=".72" />
+                  <stop stopColor="#090c37" />
+                  <stop offset={1} stopColor="#00a8c2" stopOpacity=".72" />
                 </linearGradient>
               </defs>
             </svg>
             <span className="text-sm font-medium leading-tight text-gray-300">
               Watch Demo
               <span className="text-gray-600"> - </span>
-              3:47
+              0:45
             </span>
           </span>
         </span>

@@ -10,24 +10,29 @@ import Marquee from "@/components/marquee";
 import Services from "@/components/services";
 import Clients from "@/components/clients";
 import Workflows from "@/components/workflows";
-import Features from "@/components/features";
 import Testimonials from "@/components/testimonials";
 import Contact from "@/components/contact";
 import Cta from "@/components/cta";
+import BackgroundEffect from "@/components/backgroundeffect";
 
 export default function Home() {
   return (
-    <>
-      <PageIllustration />
-      <Hero />
-      <Marquee />
-      <Services />
-      <Clients />
-      <Workflows />
-      <Features />
-      <Testimonials />
-      <Contact />
-      <Cta />
-    </>
+    <div className="relative">
+      {/* Fundo global */}
+      <div className="absolute inset-0 -z-10">
+        <BackgroundEffect />
+      </div>
+      <main className="relative z-10">
+        <PageIllustration />
+        <Hero />
+        <Marquee />
+        <Services />
+        <Clients />
+        <Workflows />
+        <Testimonials />
+        <Contact />
+        <Cta />
+      </main>
+    </div>
   );
 }

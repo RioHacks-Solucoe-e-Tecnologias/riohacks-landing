@@ -4,8 +4,14 @@ import logo from "@/public/images/logo.svg";
 
 export default function Logo() {
   return (
-    <Link href="/" className="inline-flex shrink-0" aria-label="Cruip">
-      <Image src={logo} alt="Cruip Logo" width={32} height={32} />
+    <Link href="/" className="inline-flex shrink-0" aria-label="RioHacks">
+      <Image 
+        src={logo} 
+        alt="RioHacks Logo" 
+        width={65}  // ajuste conforme necessário
+        height={65} // mantém proporção
+        priority
+      />
     </Link>
   );
 }

@@ -32,7 +32,9 @@ export default function Clients() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="py-12 md:py-20">
           <div className="mx-auto max-w-3xl pb-8 text-center">
-            <h2 className="text-3xl font-semibold">Nossos Clientes</h2>
+            <section id="clientes">
+              <h2 className="text-3xl font-semibold">Nossos Clientes</h2>
+            </section>
           </div>
 
           <div className="mx-auto grid max-w-lg grid-cols-2 gap-6 sm:max-w-none sm:grid-cols-4 md:grid-cols-4">
