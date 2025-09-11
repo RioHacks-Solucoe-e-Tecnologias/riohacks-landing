@@ -18,13 +18,15 @@ import BackgroundEffect from "@/components/backgroundeffect";
 export default function Home() {
   return (
     <div className="relative">
-      <div className="absolute inset-0 -z-10">
-        <BackgroundEffect />
-      </div>
-      <main className="relative z-10">
+      <section className="relative">
+        <div className="absolute inset-0 -z-10">
+          <BackgroundEffect />
+        </div>
         <PageIllustration />
         <Hero />
         <Marquee />
+      </section>
+      <main className="relative z-10">
         <Services />
         <Clients />
         <Workflows />

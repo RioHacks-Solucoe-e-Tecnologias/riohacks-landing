@@ -12,13 +12,12 @@ export default function BackgroundEffect() {
       }}
     >
       {/* GIF com máscara em cima e embaixo */}
-      <img
-        src={effect.src}
-        alt="Efeito de fundo"
+      <div
+        style={{ backgroundImage: `url(${effect.src})` }}
         className="
-          w-full h-full object-contain object-top opacity-100
-          [mask-image:linear-gradient(to_bottom,transparent,#000_15%,#000_85%,transparent)]
-          [-webkit-mask-image:linear-gradient(to_bottom,transparent,#000_15%,#000_85%,transparent)]
+          w-full h-full bg-no-repeat bg-cover bg-top opacity-100
+          [mask-image:linear-gradient(to_bottom,transparent,#000_35%,#000_65%,transparent)]
+          [-webkit-mask-image:linear-gradient(to_bottom,transparent,#000_35%,#000_65%,transparent)]
         "
       />
     </div>
