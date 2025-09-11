@@ -1,7 +1,7 @@
 import Image from "next/image";
 import BlurredShapeGray from "@/public/images/blurred-shape-gray.svg";
 import BlurredShape from "@/public/images/blurred-shape.svg";
-import FeaturesImage from "@/public/images/features.png";
+import FeaturesImage from "@/public/images/features-rio.png";
 
 export default function Features() {
   return (
@@ -76,8 +76,7 @@ export default function Features() {
                 Desenvolvimento de Sistemas sob Medida
               </h3>
               <p className="text-indigo-200/65">
-                Track progress across custom flows for your team. Find the right
-                balance for the user, privacy and security.
+                Criamos software exclusivo para atender suas necessidades específicas e processos únicos. Soluções escaláveis e seguras, do conceito à implantação e manutenção.
               </p>
             </article>
             <article>
@@ -94,8 +93,7 @@ export default function Features() {
                 Integração de Sistemas
               </h3>
               <p className="text-indigo-200/65">
-                Track progress across custom flows for your team. Find the right
-                balance for the user, privacy and security.
+                Conectamos todas as suas plataformas e softwares em um ecossistema unificado. Eliminamos ilhas de informação e automatizamos fluxos entre diferentes sistemas.
               </p>
             </article>
             <article>
@@ -115,8 +113,7 @@ export default function Features() {
                 Consultoria em Transformação Digital
               </h3>
               <p className="text-indigo-200/65">
-                Track progress across custom flows for your team. Find the right
-                balance for the user, privacy and security.
+                Acompanhamos sua empresa na jornada de digitalização de processos e operações. Estratégias personalizadas para modernização tecnológica e inovação contínua.
               </p>
             </article>
             <article>
@@ -141,8 +138,7 @@ export default function Features() {
                 Gestão de Tráfego Pago
               </h3>
               <p className="text-indigo-200/65">
-                Track progress across custom flows for your team. Find the right
-                balance for the user, privacy and security.
+                Estratégias de anúncios online para atrair o público certo e maximizar seu ROI. Campanhas otimizadas no Google, Meta e outras plataformas para converter cliques em clientes.
               </p>
             </article>
             <article>
@@ -162,8 +158,7 @@ export default function Features() {
                 Soluções em Inteligência Artificial e Machine Learning
               </h3>
               <p className="text-indigo-200/65">
-                Track progress across custom flows for your team. Find the right
-                balance for the user, privacy and security.
+                Desenvolvemos modelos preditivos e sistemas inteligentes personalizados para seu negócio. Análise de dados, automação de processos e insights estratégicos sob medida.
               </p>
             </article>
             <article>
@@ -183,19 +178,23 @@ export default function Features() {
                 Desenvolvimento de Sites e E-commerce
               </h3>
               <p className="text-indigo-200/65">
-                Track progress across custom flows for your team. Find the right
-                balance for the user, privacy and security.
+                Criação de plataformas digitais modernas, responsivas e de alta conversão. Lojas virtuais completas com integração de pagamentos e gestão de pedidos.
               </p>
             </article>
             <article>
-              <svg className="mb-3 fill-indigo-500" xmlns="http://www.w3.org/2000/svg" width={24} height={24}>
+              <svg
+               className="mb-3 fill-indigo-500"
+               xmlns="http://www.w3.org/2000/svg" 
+               width={24} 
+               height={24}
+              >
                 <path d="M12 2L2 12h20L12 2z" /> {/* Ícone genérico de exemplo */}
               </svg>
               <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
                 Chatbot e CRM Personalizados
               </h3>
               <p className="text-indigo-200/65">
-                Descrição curta do serviço.
+                Sistemas de atendimento inteligente que automatizam conversas e organizam dados de clientes. Integração completa com seus canais de comunicação para melhor experiência.
               </p>
             </article>
 
@@ -207,19 +206,24 @@ export default function Features() {
                 Capacitação e Treinamento Personalizados
               </h3>
               <p className="text-indigo-200/65">
-                Descrição curta do serviço.
+                Programas de treinamento desenvolvidos especificamente para sua equipe e tecnologias. Desenvolvimento de habilidades técnicas e gestão do conhecimento organizacional.
               </p>
             </article>
 
             <article>
-              <svg className="mb-3 fill-indigo-500" xmlns="http://www.w3.org/2000/svg" width={24} height={24}>
+              <svg 
+              className="mb-3 fill-indigo-500" 
+              xmlns="http://www.w3.org/2000/svg" 
+              width={24} 
+              height={24}
+              >
                 <path d="M4 6h16v12H4z" />
               </svg>
               <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
                 Realização de Eventos Técnicos
               </h3>
               <p className="text-indigo-200/65">
-                Descrição curta do serviço.
+                Organização completa de workshops, hackathons e conferências tecnológicas. Desde a concepção temática até a gestão de participantes e infraestrutura.
               </p>
             </article>
           </div>

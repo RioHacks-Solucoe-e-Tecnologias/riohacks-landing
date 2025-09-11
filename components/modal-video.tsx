@@ -55,15 +55,16 @@ export default function ModalVideo({
         data-aos="fade-up"
         data-aos-delay={200}
       >
-        <figure className="relative overflow-hidden rounded-2xl before:absolute before:inset-0 before:-z-10 before:bg-linear-to-br before:from-gray-900 before:via-indigo-500/20 before:to-gray-900">
+        <figure className="relative overflow-hidden rounded-2xl before:absolute before:inset-0 before:-z-10 before:from-gray-900 before:via-indigo-500/20 before:to-gray-900">
           <Image
-            className="opacity-50 grayscale"
+            className="grayscale"
             src={BackgroundImage}
             width={thumbWidth}
             height={thumbHeight}
             priority
             alt={thumbAlt}
           />
+          <div className="absolute inset-0 bg-gray-700/50"></div>
         </figure>
         {/* Play icon */}
         <span className="pointer-events-none absolute p-2.5 before:absolute before:inset-0 before:rounded-full before:bg-gray-950 before:duration-300 group-hover:before:scale-110">
@@ -89,15 +90,15 @@ export default function ModalVideo({
                   y2={20}
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stopColor="#090c37" />
-                  <stop offset={1} stopColor="#00a8c2" stopOpacity=".72" />
+                  <stop stopColor="#ffffffff" />
+                  <stop offset={1} stopColor="#090c37" stopOpacity=".72" />
                 </linearGradient>
               </defs>
             </svg>
             <span className="text-sm font-medium leading-tight text-gray-300">
-              Watch Demo
+              Assista o vídeo
               <span className="text-gray-600"> - </span>
-              0:45
+              0:14
             </span>
           </span>
         </span>
@@ -117,7 +118,12 @@ export default function ModalVideo({
           <div className="mx-auto flex h-full max-w-6xl items-center">
             <DialogPanel
               transition
-              className="aspect-video max-h-full w-full overflow-hidden rounded-2xl bg-black shadow-2xl duration-300 ease-out data-closed:scale-95 data-closed:opacity-0"
+              className="max-h-full w-full overflow-hidden rounded-2xl bg-black shadow-2xl duration-300 ease-out data-closed:scale-95 data-closed:opacity-0"
+              style={{
+                // Aspect ratio personalizado baseado nas dimensões do seu vídeo
+                aspectRatio: `${videoWidth}/${videoHeight}`,
+                maxWidth: `${videoWidth}px`,
+              }}
             >
               <video
                 ref={videoRef}
@@ -125,6 +131,11 @@ export default function ModalVideo({
                 height={videoHeight}
                 loop
                 controls
+                className="h-full w-full object-contain" // object-contain garante que o vídeo inteiro seja visível
+                style={{
+                  // Forçar o aspect ratio correto
+                  aspectRatio: `${videoWidth}/${videoHeight}`,
+                }}
               >
                 <source src={video} type="video/mp4" />
                 Your browser does not support the video tag.

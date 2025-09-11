@@ -18,7 +18,6 @@ import BackgroundEffect from "@/components/backgroundeffect";
 export default function Home() {
   return (
     <div className="relative">
-      {/* Fundo global */}
       <div className="absolute inset-0 -z-10">
         <BackgroundEffect />
       </div>
