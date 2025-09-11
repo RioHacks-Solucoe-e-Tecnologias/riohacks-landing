@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import ClientLogo01 from "@/public/images/client-logo-01.svg";
+import ClientLogo01 from "@/public/images/logo-norteplay.png";
 import ClientLogo02 from "@/public/images/client-logo-02.svg";
 import ClientLogo03 from "@/public/images/client-logo-03.svg";
 import ClientLogo04 from "@/public/images/client-logo-04.svg";
