@@ -16,8 +16,8 @@ export default function BackgroundEffect() {
         style={{ backgroundImage: `url(${effect.src})` }}
         className="
           w-full h-full bg-no-repeat bg-cover bg-top opacity-100
-          [mask-image:linear-gradient(to_bottom,transparent,#000_35%,#000_65%,transparent)]
-          [-webkit-mask-image:linear-gradient(to_bottom,transparent,#000_35%,#000_65%,transparent)]
+          [mask-image:linear-gradient(to_bottom,transparent,#000_20%,#000_70%,transparent)]
+          [-webkit-mask-image:linear-gradient(to_bottom,transparent,#000_10%,#000_80%,transparent)]
         "
       />
     </div>
