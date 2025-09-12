@@ -121,8 +121,7 @@ export default function Testimonials() {
             </h2>
           </section>
           <p className="text-lg text-indigo-200/65">
-            We provide tech-first solutions that empower decision-makers to
-            build healthier and happier workspaces from anywhere in the world.
+            Soluções tecnológicas que transformam desafios em resultados tangíveis. Conheça a experiência de quem já inovou com a RioHacks.
           </p>
         </div>
 

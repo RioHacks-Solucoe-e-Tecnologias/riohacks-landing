@@ -1,14 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
 import ClientLogo01 from "@/public/images/logo-norteplay.png";
-import ClientLogo02 from "@/public/images/client-logo-02.svg";
-import ClientLogo03 from "@/public/images/client-logo-03.svg";
-import ClientLogo04 from "@/public/images/client-logo-04.svg";
-import ClientLogo05 from "@/public/images/client-logo-05.svg";
-import ClientLogo06 from "@/public/images/client-logo-06.svg";
-import ClientLogo07 from "@/public/images/client-logo-07.svg";
-import ClientLogo08 from "@/public/images/client-logo-08.svg";
-import ClientLogo09 from "@/public/images/client-logo-09.svg";
+import ClientLogo02 from "@/public/images/logo-alterdochaowine.png";
+import ClientLogo03 from "@/public/images/logo-drregulariza.png";
+import ClientLogo04 from "@/public/images/logo-dunortecred.png";
+import ClientLogo05 from "@/public/images/logo-lbin.png";
+import ClientLogo06 from "@/public/images/logo-serveapp.png";
+import ClientLogo07 from "@/public/images/logo-mirante.png";
+import ClientLogo08 from "@/public/images/logo-correria.png";
 
 export default function Clients() {
   const clientLogos = [
@@ -19,12 +18,7 @@ export default function Clients() {
     { src: ClientLogo05, alt: "Nossa Saúde", link: "https://nossasaude.site" },
     { src: ClientLogo06, alt: "Rede Riba", link: "https://rederiba.org" },
     { src: ClientLogo07, alt: "RioHacks", link: "https://riohacks.com.br" },
-    {
-      src: ClientLogo08,
-      alt: "Correr IA",
-      link: "https://www.instagram.com/correr_ia",
-    },
-    { src: ClientLogo09, alt: "Client 9", link: "https://riohacks.com.br" },
+    { src: ClientLogo08, alt: "Correr IA", link: "https://www.instagram.com/correr_ia"},
   ];
 
   return (
@@ -37,11 +31,11 @@ export default function Clients() {
             </section>
           </div>
 
-          <div className="mx-auto grid max-w-lg grid-cols-2 gap-6 sm:max-w-none sm:grid-cols-4 md:grid-cols-4">
+          <div className="mx-auto grid max-w-lg grid-cols-2 gap-6 sm:max-w-none sm:grid-cols-3 md:grid-cols-4">
             {clientLogos.map((client, index) => (
               <div
                 key={index}
-                className="flex items-center justify-center rounded-md border border-gray-800/40 p-4 transition-opacity hover:opacity-75"
+                className="flex items-center justify-center rounded-md border border-gray-800/40 p-8 transition-opacity hover:opacity-75"
               >
                 <Link
                   href={client.link}
@@ -54,7 +48,7 @@ export default function Clients() {
                     alt={client.alt}
                     width={100}
                     height={40}
-                    className="h-10 w-auto"
+                    className="h-16 w-auto"
                   />
                 </Link>
               </div>
