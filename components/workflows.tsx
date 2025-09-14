@@ -1,7 +1,8 @@
 import Image from "next/image";
-import WorflowImg01 from "@/public/images/logo-hackatur2.png";
-import WorflowImg02 from "@/public/images/logo-hackatur3.png";
-import WorflowImg03 from "@/public/images/logo-hackatur.png";
+import WorflowImg01 from "@/public/images/logo-hackatur3.png";
+import WorflowImg02 from "@/public/images/logo-hackatur.png";
+import WorflowImg03 from "@/public/images/logo-hackatur2.png";
+import LogoHackatur from "@/public/images/logo-sitehackatur.png";
 import Spotlight from "@/components/spotlight";
 
 export default function Workflows() {
@@ -18,9 +19,18 @@ export default function Workflows() {
                 </span>
               </section>
             </div>
-            <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-gray-200),var(--color-indigo-200),var(--color-gray-50),var(--color-indigo-300),var(--color-gray-200))] bg-[length:200%_auto] bg-clip-text pb-4 font-nacelle text-3xl font-semibold text-transparent md:text-4xl">
-              Conheça mais sobre o nosso Hackatur
-            </h2>
+            <div className="flex items-center justify-center gap-4 pb-4">
+              <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-gray-200),var(--color-indigo-200),var(--color-gray-50),var(--color-indigo-300),var(--color-gray-200))] bg-[length:200%_auto] bg-clip-text font-nacelle text-3xl font-semibold text-transparent md:text-4xl">
+                Conheça mais sobre o nosso Hackatur
+              </h2>
+              <Image
+                src={LogoHackatur}
+                width={50}
+                height={50}
+                alt="Logo Hackatur"
+                className="rounded-lg w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14"
+              />
+            </div>
             <p className="text-lg text-indigo-200/65">
               Um movimento inovador que conecta talentos, startups e tecnologia para revolucionar negócios na Amazônia com sustentabilidade. Unimos mentes criativas e demandas reais do mercado em eventos transformadores.
               Impulsionamos soluções locais e desenvolvimento sustentável, integrando turismo, tecnologia e comunidade para construir um futuro mais próspero e inteligente.

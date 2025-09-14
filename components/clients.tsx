@@ -8,6 +8,12 @@ import ClientLogo05 from "@/public/images/logo-lbin.png";
 import ClientLogo06 from "@/public/images/logo-serveapp.png";
 import ClientLogo07 from "@/public/images/logo-mirante.png";
 import ClientLogo08 from "@/public/images/logo-correria.png";
+import ClientLogo09 from "@/public/images/logo-gui360.png";
+import ClientLogo10 from "@/public/images/logo-amelias.png";
+import ClientLogo11 from "@/public/images/logo-casadoivo.png";
+import ClientLogo12 from "@/public/images/logo-vivervideos.png";
+import ClientLogo13 from "@/public/images/logo-autseg.png";
+
 
 export default function Clients() {
   const clientLogos = [
@@ -19,6 +25,11 @@ export default function Clients() {
     { src: ClientLogo06, alt: "Rede Riba", link: "https://rederiba.org" },
     { src: ClientLogo07, alt: "RioHacks", link: "https://riohacks.com.br" },
     { src: ClientLogo08, alt: "Correr IA", link: "https://www.instagram.com/correr_ia"},
+    { src: ClientLogo09, alt: "Gui360", link: "http://localhost:3000/"},
+    { src: ClientLogo10, alt: "Amélias da Amazônia", link: "http://localhost:3000/"},
+    { src: ClientLogo11, alt: "Casa do Ivo", link: "http://localhost:3000/"},
+    { src: ClientLogo12, alt: "Viver Vídeos", link: "http://localhost:3000/"},
+    { src: ClientLogo13, alt: "Aut Seg", link: "http://localhost:3000/"},
   ];
 
   return (
