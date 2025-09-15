@@ -1,4 +1,6 @@
-import Link from "next/link";
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import ClientLogo01 from "@/public/images/logo-norteplay.png";
 import ClientLogo02 from "@/public/images/logo-alterdochaowine.png";
@@ -13,24 +15,107 @@ import ClientLogo10 from "@/public/images/logo-amelias.png";
 import ClientLogo11 from "@/public/images/logo-casadoivo.png";
 import ClientLogo12 from "@/public/images/logo-vivervideos.png";
 import ClientLogo13 from "@/public/images/logo-autseg.png";
+import ClientModal from "@/components/clientmodal";
 
+// Imagens da AlterdoChaoWine
+import Alterdochao0 from "@/public/images/alterdochaowine/alterdochaowine0.jpg";
+import Alterdochao1 from "@/public/images/alterdochaowine/alterdochaowine1.jpg";
+import Alterdochao2 from "@/public/images/alterdochaowine/alterdochaowine2.png";
+
+// Imagens da Amelia
+import Amelias0 from "@/public/images/amelias/amelias0.jpg";
+import Amelias1 from "@/public/images/amelias/amelias1.jpg";
+import Amelias2 from "@/public/images/amelias/amelias2.jpg";
+import Amelias3 from "@/public/images/amelias/amelias3.jpg";
+
+// Adicione imagens adicionais para o carrossel se desejar
+// import ExemploImagem1 from "@/public/images/exemplo1.jpg";
+// import ExemploImagem2 from "@/public/images/exemplo2.jpg";
 
 export default function Clients() {
+  const [selectedClient, setSelectedClient] = useState<any>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   const clientLogos = [
-    { src: ClientLogo01, alt: "Aetha", link: "https://aetha.com.br" },
-    { src: ClientLogo02, alt: "Casa do Ivo", link: "https://casadoivo.com.br" },
-    { src: ClientLogo03, alt: "LBIN", link: "https://lbin.com.br" },
-    { src: ClientLogo04, alt: "Mirantel", link: "https://mirantelp.com.br" },
-    { src: ClientLogo05, alt: "Nossa Saúde", link: "https://nossasaude.site" },
-    { src: ClientLogo06, alt: "Rede Riba", link: "https://rederiba.org" },
-    { src: ClientLogo07, alt: "RioHacks", link: "https://riohacks.com.br" },
-    { src: ClientLogo08, alt: "Correr IA", link: "https://www.instagram.com/correr_ia"},
-    { src: ClientLogo09, alt: "Gui360", link: "http://localhost:3000/"},
-    { src: ClientLogo10, alt: "Amélias da Amazônia", link: "http://localhost:3000/"},
-    { src: ClientLogo11, alt: "Casa do Ivo", link: "http://localhost:3000/"},
-    { src: ClientLogo12, alt: "Viver Vídeos", link: "http://localhost:3000/"},
-    { src: ClientLogo13, alt: "Aut Seg", link: "http://localhost:3000/"},
+    { 
+      src: ClientLogo01, 
+      alt: "Norteplay", 
+      description: "Plataforma de streaming regional com tecnologia avançada.",
+      // images: [ClientLogo01, ExemploImagem1, ExemploImagem2] // Adicione mais imagens se quiser
+    },
+    { 
+      src: ClientLogo02, 
+      alt: "Alter do Chão Wine", 
+      description: "Vinícola premium com foco em experiências enogastronômicas.",
+      images: [Alterdochao0, Alterdochao1, Alterdochao2]
+    },
+    { 
+      src: ClientLogo03, 
+      alt: "Dr Regulariza", 
+      description: "Soluções jurídicas especializadas em regularização de documentos."
+    },
+    { 
+      src: ClientLogo04, 
+      alt: "DuNorteCred", 
+      description: "Sistema financeiro cooperativo para a região norte."
+    },
+    { 
+      src: ClientLogo05, 
+      alt: "LBIN", 
+      description: "Laboratório de inovação e tecnologia da Amazônia."
+    },
+    { 
+      src: ClientLogo06, 
+      alt: "ServeApp", 
+      description: "Plataforma de delivery e serviços locais."
+    },
+    { 
+      src: ClientLogo07, 
+      alt: "Mirante", 
+      description: "Sistema de monitoramento e segurança patrimonial."
+    },
+    { 
+      src: ClientLogo08, 
+      alt: "Correr IA", 
+      description: "Soluções em inteligência artificial para negócios."
+    },
+    { 
+      src: ClientLogo09, 
+      alt: "Gui360", 
+      description: "Guia turístico digital com realidade aumentada."
+    },
+    { 
+      src: ClientLogo10, 
+      alt: "Amélias da Amazônia", 
+      description: "Artesanato sustentável e cultura regional.",
+      images: [Amelias0, Amelias1, Amelias2, Amelias3]
+    },
+    { 
+      src: ClientLogo11, 
+      alt: "Casa do Ivo", 
+      description: "Hospitalidade e turismo com tecnologia integrada."
+    },
+    { 
+      src: ClientLogo12, 
+      alt: "Viver Vídeos", 
+      description: "Produção audiovisual e marketing digital."
+    },
+    { 
+      src: ClientLogo13, 
+      alt: "Aut Seg", 
+      description: "Sistemas de automação e segurança eletrônica."
+    },
   ];
+
+  const handleClientClick = (client: any) => {
+    setSelectedClient(client);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setSelectedClient(null);
+  };
 
   return (
     <section>
@@ -46,14 +131,10 @@ export default function Clients() {
             {clientLogos.map((client, index) => (
               <div
                 key={index}
-                className="flex items-center justify-center rounded-md border border-gray-800/40 p-8 transition-opacity hover:opacity-75"
+                className="flex items-center justify-center rounded-md border border-gray-800/40 p-8 transition-all hover:scale-105 hover:border-indigo-500/30 cursor-pointer"
+                onClick={() => handleClientClick(client)}
               >
-                <Link
-                  href={client.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center"
-                >
+                <div className="flex items-center justify-center">
                   <Image
                     src={client.src}
                     alt={client.alt}
@@ -61,10 +142,19 @@ export default function Clients() {
                     height={40}
                     className="h-16 w-auto"
                   />
-                </Link>
+                </div>
               </div>
             ))}
           </div>
+
+          {/* Modal */}
+          {selectedClient && (
+            <ClientModal
+              client={selectedClient}
+              isOpen={isModalOpen}
+              onClose={closeModal}
+            />
+          )}
         </div>
       </div>
     </section>

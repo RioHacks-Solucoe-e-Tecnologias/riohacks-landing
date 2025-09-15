@@ -94,3 +94,44 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* Transições suaves para o carrossel */
+.carousel-transition {
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+/* Efeito de fade nas imagens laterais */
+.carousel-side-image {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.carousel-side-image:hover {
+  opacity: 0.7 !important;
+}
+
+/* Melhorias para o modal do carrossel */
+.carousel-container {
+  perspective: 1000px;
+}
+
+.carousel-image {
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.carousel-image-prev {
+  transform: translateX(-75%) scale(0.8);
+  opacity: 0.4;
+  z-index: 10;
+}
+
+.carousel-image-next {
+  transform: translateX(75%) scale(0.8);
+  opacity: 0.4;
+  z-index: 10;
+}
+
+.carousel-image-current {
+  transform: translateX(0) scale(1);
+  opacity: 1;
+  z-index: 20;
+}
