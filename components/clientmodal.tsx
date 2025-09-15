@@ -55,7 +55,7 @@ export default function ClientModal({ client, isOpen, onClose }: ClientModalProp
       <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
         <DialogPanel
           transition
-          className="w-full max-w-4xl rounded-2xl bg-gray-900 p-6 shadow-xl"
+          className="w-full max-w-4xl rounded-2xl bg-gray-900 p-6 shadow-xl max-h-[90vh] overflow-y-auto"
         >
           {/* Título */}
           <div className="text-center mb-6">
@@ -161,9 +161,10 @@ export default function ClientModal({ client, isOpen, onClose }: ClientModalProp
 
           {/* Descrição */}
           {client.description && (
-            <div className="text-center mb-6">
-              <p className="text-gray-300 text-lg">{client.description}</p>
-            </div>
+            <div
+              className="text-center mb-6 text-gray-300 text-lg whitespace-pre-line"
+              dangerouslySetInnerHTML={{ __html: client.description }}
+            />
           )}
 
           {/* Botão Fechar */}
