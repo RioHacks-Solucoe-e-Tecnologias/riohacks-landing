@@ -17,10 +17,25 @@ import ClientLogo12 from "@/public/images/logo-vivervideos.png";
 import ClientLogo13 from "@/public/images/logo-autseg.png";
 import ClientModal from "@/components/clientmodal";
 
+// Imagens da NortePlay
+import Norteplay0 from "@/public/images/norteplay/norteplay0.png";
+import Norteplay1 from "@/public/images/norteplay/norteplay1.jpg";
+import Norteplay2 from "@/public/images/norteplay/norteplay2.jpeg";
+
 // Imagens da AlterdoChaoWine
 import Alterdochao0 from "@/public/images/alterdochaowine/alterdochaowine0.jpg";
 import Alterdochao1 from "@/public/images/alterdochaowine/alterdochaowine1.jpg";
 import Alterdochao2 from "@/public/images/alterdochaowine/alterdochaowine2.png";
+
+// Imagens da DrRegulariza
+import Drregulariza0 from "@/public/images/drregulariza/drregulariza0.png";
+import Drregulariza1 from "@/public/images/drregulariza/drregulariza1.png";
+
+// Imagens da DuNorte Cred
+import Dunortecred0 from "@/public/images/dunortecred/dunortecred0.jpg";
+import Dunortecred1 from "@/public/images/dunortecred/dunortecred1.jpg";
+import Dunortecred2 from "@/public/images/dunortecred/dunortecred2.jpg";
+import Dunortecred3 from "@/public/images/dunortecred/dunortecred3.jpg";
 
 // Imagens da Amelia
 import Amelias0 from "@/public/images/amelias/amelias0.jpg";
@@ -28,9 +43,10 @@ import Amelias1 from "@/public/images/amelias/amelias1.jpg";
 import Amelias2 from "@/public/images/amelias/amelias2.jpg";
 import Amelias3 from "@/public/images/amelias/amelias3.jpg";
 
-// Adicione imagens adicionais para o carrossel se desejar
-// import ExemploImagem1 from "@/public/images/exemplo1.jpg";
-// import ExemploImagem2 from "@/public/images/exemplo2.jpg";
+// Imagens da Vivervideos
+import Vivervideos0 from "@/public/images/vivervideos/vivervideos0.jpg";
+import Vivervideos1 from "@/public/images/vivervideos/vivervideos1.jpeg";
+import Vivervideos2 from "@/public/images/vivervideos/vivervideos2.jpeg";
 
 export default function Clients() {
   const [selectedClient, setSelectedClient] = useState<any>(null);
@@ -41,7 +57,7 @@ export default function Clients() {
       src: ClientLogo01, 
       alt: "Norteplay", 
       description: "Plataforma de streaming regional com tecnologia avançada.",
-      // images: [ClientLogo01, ExemploImagem1, ExemploImagem2] // Adicione mais imagens se quiser
+      images: [Norteplay0, Norteplay1, Norteplay2]
     },
     { 
       src: ClientLogo02, 
@@ -52,12 +68,14 @@ export default function Clients() {
     { 
       src: ClientLogo03, 
       alt: "Dr Regulariza", 
-      description: "Soluções jurídicas especializadas em regularização de documentos."
+      description: "Soluções jurídicas especializadas em regularização de documentos.",
+      images: [Drregulariza0, Drregulariza1]
     },
     { 
       src: ClientLogo04, 
       alt: "DuNorteCred", 
-      description: "Sistema financeiro cooperativo para a região norte."
+      description: "Sistema financeiro cooperativo para a região norte.",
+      images: [Dunortecred0, Dunortecred1, Dunortecred2, Dunortecred3]
     },
     { 
       src: ClientLogo05, 
@@ -98,7 +116,8 @@ export default function Clients() {
     { 
       src: ClientLogo12, 
       alt: "Viver Vídeos", 
-      description: "Produção audiovisual e marketing digital."
+      description: "Produção audiovisual e marketing digital.",
+      images: [Vivervideos0, Vivervideos1, Vivervideos2]
     },
     { 
       src: ClientLogo13, 
