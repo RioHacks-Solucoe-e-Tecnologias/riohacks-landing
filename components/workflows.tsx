@@ -21,7 +21,7 @@ export default function Workflows() {
             </div>
             <div className="flex items-center justify-center gap-4 pb-4">
               <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-gray-200),var(--color-indigo-200),var(--color-gray-50),var(--color-indigo-300),var(--color-gray-200))] bg-[length:200%_auto] bg-clip-text font-nacelle text-3xl font-semibold text-transparent md:text-4xl">
-                Conheça mais sobre o nosso Hackatur
+                Conheça mais sobre o Hackatur
               </h2>
               <Image
                 src={LogoHackatur}

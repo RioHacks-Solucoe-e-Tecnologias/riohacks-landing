@@ -319,10 +319,28 @@ export default function Clients() {
     <section>
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="py-12 md:py-20">
-          <div className="mx-auto max-w-3xl pb-8 text-center">
-            <section id="clientes">
-              <h2 className="text-3xl font-semibold">Nossos Clientes</h2>
-            </section>
+          <div className="mx-auto max-w-3xl pb-4 text-center md:pb-12">
+            {/* Div com as linhas criadas como elementos reais */}
+            <div className="flex items-center justify-center gap-3 pb-3">
+              {/* Linha esquerda */}
+              <div className="h-px w-8 bg-gradient-to-r from-transparent to-indigo-200/50"></div>
+              
+              <span className="inline-flex bg-gradient-to-r from-indigo-500 to-indigo-200 bg-clip-text text-transparent">
+                <section id="clientes">
+                  Conheça nossos clientes
+                </section>
+              </span>
+              
+              {/* Linha direita */}
+              <div className="h-px w-8 bg-gradient-to-l from-transparent to-indigo-200/50"></div>
+            </div>
+            
+            <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-gray-200),var(--color-indigo-200),var(--color-gray-50),var(--color-indigo-300),var(--color-gray-200))] bg-[length:200%_auto] bg-clip-text pb-4 font-nacelle text-3xl font-semibold text-transparent md:text-4xl">
+              Nossos Clientes
+            </h2>
+            <p className="text-lg text-indigo-200/65">
+              Empresas que confiam em nossos serviços para crescer digitalmente.
+            </p>
           </div>
 
           <div className="mx-auto grid max-w-lg grid-cols-2 gap-6 sm:max-w-none sm:grid-cols-3 md:grid-cols-4">
