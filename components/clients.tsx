@@ -180,7 +180,7 @@ export default function Clients() {
       Nosso diferencial está na <strong>proximidade com o cliente</strong> e no <strong>profundo entendimento das suas necessidades</strong>.
       Buscamos conhecer o perfil de cada pessoa para garantir a entrega de <strong>experiências únicas</strong> dentro e fora do canteiro de obras.
 
-      A <strong>Rio Hacks</strong> foi responsável pelo desenvolvimento do <strong>sistema de Dashboard Financeiro</strong>.
+      A <strong>Rio Hacks</strong> foi responsável pelo desenvolvimento do <strong>sistema de Dashboard Financeiro</strong> e o <strong> sistema de atendimento<?strong>.
       `,
       images: [LbIn0, LbIn1, LbIn2, LbIn3]
     },
