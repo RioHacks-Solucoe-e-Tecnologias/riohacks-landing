@@ -43,6 +43,7 @@ import Dunortecred3 from "@/public/images/dunortecred/dunortecred3.jpg";
 import LbIn0 from "@/public/images/lbin/lbin0.png";
 import LbIn1 from "@/public/images/lbin/lbin1.png";
 import LbIn2 from "@/public/images/lbin/lbin2.png";
+import LbIn3 from "@/public/images/lbin/lbin3.png";
 
 // Imagens da ServeApp
 import Serveapp0 from "@/public/images/serveapp/serveapp0.jpg";
@@ -105,16 +106,16 @@ export default function Clients() {
 
         Para <strong>Organizadores de Eventos</strong>:
         <ul style="text-align:left; display:inline-block; margin: 0 auto;">  
-          <li>• <strong>Gestão Completa:</strong> Crie, gerencie e promova seus eventos esportivos com facilidade.</li> 
-          <li>• <strong>Divulgação Direcionada:</strong> Alcance seu público-alvo diretamente na plataforma.</li>
-          <li>• <strong>Inscrições Simplificadas:</strong> Todo o processo de inscrição e pagamento é feito online, de forma prática e segura.</li>
+          • <strong>Gestão Completa:</strong> Crie, gerencie e promova seus eventos esportivos com facilidade.
+          • <strong>Divulgação Direcionada:</strong> Alcance seu público-alvo diretamente na plataforma.
+          • <strong>Inscrições Simplificadas:</strong> Todo o processo de inscrição e pagamento é feito online, de forma prática e segura.
         </ul>
 
         Para <strong>Donos de Times e Clubes</strong>:
         <ul style="text-align:left; display:inline-block; margin: 0 auto;">  
-          <li>• <strong>Encontre Novos Talentos:</strong> Acompanhe rankings e descubra atletas promissores.</li>  
-          <li>• <strong>Gestão de Clubes e Equipes:</strong> Organize seus times, cadastre jogadores e gerencie competições internas.</li> 
-          <li>• <strong>Conexão e Visibilidade:</strong> Fortaleça sua presença no cenário esportivo amador.</li>
+          • <strong>Encontre Novos Talentos:</strong> Acompanhe rankings e descubra atletas promissores. 
+          • <strong>Gestão de Clubes e Equipes:</strong> Organize seus times, cadastre jogadores e gerencie competições internas. 
+          • <strong>Conexão e Visibilidade:</strong> Fortaleça sua presença no cenário esportivo amador.
         </ul>
 
         A Rio Hacks desenvolveu <strong>o app</strong> e <strong>o site de divulgação</strong>.
@@ -124,73 +125,182 @@ export default function Clients() {
     { 
       src: ClientLogo02, 
       alt: "Alter do Chão Wine", 
-      description: "Vinícola premium com foco em experiências enogastronômicas.",
+      description: `
+      <strong>Do coração da Amazônia para o Mundo!</strong>
+
+      Somos o <strong>primeiro vinho feito a partir da polpa do açaí</strong>, com 20% de sua composição oriunda dos resíduos do açaí — um grande fator de <strong>sustentabilidade</strong>
+
+      Com muito orgulho somos da cidade de <strong>Santarém</strong>, no Estado do <strong>Pará</strong>.
+
+      Somos uma <strong>Startup</strong> que nasceu com esse propósito nobre e fortemente ligado à <strong>Amazônia</strong>.
+
+      Com <strong>coloração intensa</strong>, <strong>textura aveludada</strong> e um <strong>aroma característico do açaí</strong>, o <strong>Alter do Chão Wine</strong> surpreende ao harmonizar a tradição amazônica com a sofisticação dos melhores vinhos.
+
+      A linha <strong>Açaí Tinto Seco</strong> revela um sabor autêntico e envolvente, ideal para brindar momentos inesquecíveis.
+
+      A <strong>Rio Hacks</strong> foi responsável pelo <strong>site de divulgação</strong> e <strong>E-Commerce</strong>.
+      `,
       images: [Alterdochao0, Alterdochao1, Alterdochao2]
     },
     { 
       src: ClientLogo03, 
       alt: "Dr Regulariza", 
-      description: "Soluções jurídicas especializadas em regularização de documentos.",
+      description: `
+      <strong>Dr. Regulariza</strong> é uma empresa familiar que, há mais de <strong>6 anos</strong>, vem construindo uma trajetória sólida no <strong>mercado imobiliário</strong>.
+
+      Desde o início, o propósito sempre foi ir além da simples prestação de serviços: <strong>oferecer confiança, segurança e realização</strong> para cada cliente.
+
+      Atuando em <strong>Santarém e região</strong>, a empresa se destaca na <strong>compra, venda e locação de imóveis</strong>, tanto de terceiros quanto da própria imobiliária, sempre prezando pela <strong>transparência</strong> e pela <strong>valorização de cada negociação</strong>.
+
+      A <strong>Rio Hacks</strong> foi responsável pelo <strong>sistema de Dashboard Financeiro</strong> e pelo <strong>site de divulgação</strong>.
+      `,
       images: [Drregulariza0, Drregulariza1, Drregulariza2, Drregulariza3]
     },
     { 
       src: ClientLogo04, 
       alt: "DuNorteCred", 
-      description: "Sistema financeiro cooperativo para a região norte.",
+      description: `
+      <strong>DuNorte Cred</strong> oferece <strong>soluções financeiras</strong> com total <strong>transparência</strong> e <strong>taxas justas</strong>.
+
+      Seja para <strong>antecipar seu FGTS</strong>, obter <strong>crédito para trabalhadores CLT</strong> ou garantir <strong>condições especiais para aposentados e pensionistas</strong>, a DuNorte Cred está pronta para ajudar.
+
+      Também trabalhamos com <strong>empréstimos usando o limite do seu cartão de crédito</strong>, sempre com <strong>confiança e agilidade</strong> para que você possa realizar seus planos com tranquilidade.
+
+      A <strong>Rio Hacks</strong> foi responsável pelo <strong>site de divulgação</strong> e pelo <strong>Chatbot</strong>.
+      `,
       images: [Dunortecred0, Dunortecred1, Dunortecred2, Dunortecred3]
     },
     { 
       src: ClientLogo05, 
       alt: "LBIN", 
-      description: "Laboratório de inovação e tecnologia da Amazônia.",
-      images: [LbIn0, LbIn1, LbIn2]
+      description: `
+      <strong>LB IN</strong> é uma <strong>incorporadora</strong> que vem deixando sua marca ao entregar
+      <strong>empreendimentos inovadores, modernos, confortáveis e bem localizados</strong> em Santarém/PA.
+
+      Nosso diferencial está na <strong>proximidade com o cliente</strong> e no <strong>profundo entendimento das suas necessidades</strong>.
+      Buscamos conhecer o perfil de cada pessoa para garantir a entrega de <strong>experiências únicas</strong> dentro e fora do canteiro de obras.
+
+      A <strong>Rio Hacks</strong> foi responsável pelo desenvolvimento do <strong>sistema de Dashboard Financeiro</strong>.
+      `,
+      images: [LbIn0, LbIn1, LbIn2, LbIn3]
     },
     { 
       src: ClientLogo06, 
       alt: "ServeApp", 
-      description: "Plataforma de delivery e serviços locais.",
+      description: `
+      <strong>ServeApp</strong> nasceu como um <strong>aplicativo de contratação de serviços</strong>, 
+      conectando clientes e prestadores de maneira simples e ágil.
+
+      O grande diferencial é sua proposta de ser um <strong>Super App</strong>: 
+      além da contratação de serviços, oferece <strong>Marketplace</strong>, 
+      <strong>carteira digital</strong> e diversos outros recursos que 
+      serão incorporados continuamente, tornando-se uma plataforma cada vez mais completa.
+
+      A <strong>Rio Hacks</strong> foi responsável pelo <strong>desenvolvimento do aplicativo</strong>.
+      `,
       images: [Serveapp0, Serveapp1, Serveapp2, Serveapp3, Serveapp4]
     },
     { 
       src: ClientLogo07, 
       alt: "Mirante", 
-      description: "Sistema de monitoramento e segurança patrimonial.",
+      description: `
+      <strong>Mirante Residence</strong> é um <strong>empreendimento imobiliário de alto padrão</strong> em Santarém – PA, 
+      onde <strong>sofisticação</strong>, <strong>conforto</strong> e <strong>inovação</strong> se encontram para oferecer 
+      uma experiência única de morar bem.
+
+      Com design moderno e espaços planejados para o máximo de bem-estar, 
+      o Mirante Residence representa um novo patamar de qualidade de vida na região.
+
+      A <strong>Rio Hacks</strong> foi responsável pelo <strong>desenvolvimento do site de divulgação</strong>.
+      `,
       images: [Mirantes0, Mirantes1, Mirantes2, Mirantes3]
     },
     { 
       src: ClientLogo08, 
       alt: "Correr IA", 
-      description: "Soluções em inteligência artificial para negócios.",
+      description: `
+      <strong>Correr.IA</strong> é uma <strong>plataforma de inteligência artificial</strong> voltada para potencializar negócios.
+
+      Sua missão é <strong>simplificar a complexidade da IA</strong>, tornando-a acessível a todos. 
+      Com o conhecimento e as ferramentas certas, a Correr.IA acredita ser possível <strong>transformar o tempo em um recurso valioso</strong> e <strong>impulsionar o faturamento de empresas</strong> de diferentes segmentos.
+      
+      A <strong>Rio Hacks</strong> foi responsável pelo <strong>desenvolvimento do Dashboard Financeiro</strong>.
+      `,
       images: [CorrerIA0, CorrerIA1, CorrerIA2]
     },
     { 
       src: ClientLogo09, 
       alt: "Gui360", 
-      description: "Guia turístico digital com realidade aumentada.",
+      description: `
+      O <strong>GUI360</strong> é uma plataforma de <strong>gestão clínica</strong> especializada no atendimento de pacientes com transtornos do neurodesenvolvimento (<strong>TDAH</strong>, <strong>TEA</strong>).
+
+      O sistema oferece funcionalidades completas para clínicas e profissionais independentes, incluindo:
+      <ul style="text-align:left; display:inline-block; margin:0 auto;">
+        <strong>Cadastro de pacientes</strong>
+        <strong>Agendamentos</strong>
+        <strong>Prontuários eletrônicos</strong>
+        <strong>Planos terapêuticos</strong>
+        <strong>Gestão financeira</strong>
+      </ul>
+
+      Proporciona uma solução robusta e flexível que atende desde <strong>clínicas de grande porte</strong> até <strong>profissionais autônomos</strong>, priorizando a <strong>eficiência operacional</strong> e a <strong>qualidade do atendimento centrado no paciente</strong>.
+
+      A <strong>Rio Hacks</strong> foi responsável pela <strong>criação do sistema web</strong>.
+      `,
       images: [Gui360_0, Gui360_1, Gui360_2, Gui360_3]
     },
     { 
       src: ClientLogo10, 
       alt: "Amélias da Amazônia", 
-      description: "Artesanato sustentável e cultura regional.",
+      description: `
+      <strong>Amélias da Amazônia</strong> é uma associação que preserva saberes tradicionais, transformando sementes nativas como <strong>andiroba</strong> e <strong>copaíba</strong>
+      em <strong>óleos naturais poderosos</strong>.
+
+      De forma artesanal e cuidadosa, esses óleos se tornam a base de <strong>sabonetes, cremes, velas, incensos</strong> e outros produtos que carregam o aroma, a força e o espírito da floresta.
+
+      Ao longo dos anos, o grupo estruturou-se, firmou parcerias e conquistou reconhecimento pela sua atuação na <strong>conservação dos recursos da Amazônia</strong>.
+      Com <strong>16 membros</strong> — a maioria mulheres — as Amélias representam a <strong>força feminina</strong> à frente de um trabalho coletivo e afetuoso, em que <strong>cada produto carrega uma história de resistência e renovação</strong>.
+
+      A <strong>Rio Hacks</strong> foi responsável pelo <strong>desenvolvimento do site de Divulgação</strong>.
+      `,
       images: [Amelias0, Amelias1, Amelias2, Amelias3]
     },
     { 
       src: ClientLogo11, 
       alt: "Casa do Ivo", 
-      description: "Hospitalidade e turismo com tecnologia integrada.",
+      description: `
+      <strong>Pousadas Casa do Ivo</strong> reúnem <strong>conforto, comodidades e atendimento diferenciado</strong> em <strong>cinco unidades</strong> especialmente preparadas para receber você.
+
+      Seja para <strong>relaxar à beira da praia</strong>, aproveitar momentos inesquecíveis em família ou <strong>explorar a cultura e a beleza amazônica</strong>, temos o lugar ideal para a sua estadia.
+
+      A <strong>Rio Hacks</strong> foi responsável pelo <strong>desenvolvimento do site de divulgação</strong>.
+      `,
       images: [CasadoIvo0, CasadoIvo1, CasadoIvo2]
     },
     { 
       src: ClientLogo12, 
       alt: "Viver Vídeos", 
-      description: "Produção audiovisual e marketing digital.",
+      description: `
+      <strong>Viver Vídeos</strong> é uma <strong>agência de comunicação especializada em audiovisual</strong>, com mais de <strong>15 anos de experiência</strong> em gravação e edição de vídeos profissionais.  
+
+      A equipe oferece <strong>serviços ágeis</strong>, <strong>consultoria personalizada</strong> e <strong>atendimento 100% online</strong> para pessoas físicas e jurídicas.  
+
+      O propósito é <strong>ajudar pessoas a compartilhar sua essência através do vídeo</strong> e construir uma <strong>empresa autossustentável</strong>, contribuindo para o bem-estar da equipe e da sociedade.
+
+      A <strong>Rio Hacks</strong> foi responsável pela <strong>criação do site de divulgação</strong>.
+      `,
       images: [Vivervideos0, Vivervideos1, Vivervideos2]
     },
     { 
       src: ClientLogo13, 
       alt: "Aut Seg", 
-      description: "Sistemas de automação e segurança eletrônica.",
+      description: `
+      <strong>Autseg</strong> oferece <strong>soluções completas em monitoramento</strong>, <strong>portaria remota</strong>, <strong>sonorização ambiente</strong> e <strong>automação patrimonial</strong>, garantindo mais segurança e comodidade para empresas e residências.  
+
+      Os clientes podem solicitar uma <strong>cotação gratuita e personalizada</strong>, de acordo com suas necessidades específicas de proteção e tecnologia.  
+
+      A <strong>Rio Hacks</strong> foi responsável pelo <strong>desenvolvimento do site de divulgação</strong>.
+      `,
       images: [AutSeg0, AutSeg1, AutSeg2]
     },
   ];

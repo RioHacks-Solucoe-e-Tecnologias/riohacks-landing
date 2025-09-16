@@ -80,7 +80,7 @@ const testimonials = [
   {
     img: TestimonialImg07,
     clientImg: ClientImg07,
-    name: "Aleatório",
+    name: "Edgard Atanes",
     company: "Mirante",
     content:
       "I was blown away by how easy it was to create my content using this tool! Within a few hours, I had a professional-looking platform up and running, and my client could not believe it.",
