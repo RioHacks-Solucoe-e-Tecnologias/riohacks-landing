@@ -17,25 +17,25 @@ export default function Header() {
           {/* Menu de navegação */}
           <nav className="flex flex-1 items-center justify-end gap-6 text-sm font-medium">
             <a
-              href="#oque-fazemos"
+              href="/#oque-fazemos"
               className="text-gray-300 hover:text-white transition"
             >
               O que fazemos?
             </a>
             <a
-              href="#clientes"
+              href="/#clientes"
               className="text-gray-300 hover:text-white transition"
             >
               Nossos clientes
             </a>
             <a
-              href="#hackatur"
+              href="/#hackatur"
               className="text-gray-300 hover:text-white transition"
             >
               Hackatur
             </a>
             <a
-              href="#depoimentos"
+              href="/#depoimentos"
               className="text-gray-300 hover:text-white transition"
             >
               Depoimentos
