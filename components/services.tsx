@@ -48,15 +48,21 @@ export default function Features() {
               Serviços pensados para acelerar a transformação digital da sua empresa.
             </p>
           </div>
+          
+          {/* IMAGEM RESPONSIVA - ALTERAÇÃO AQUI */}
           <div className="flex justify-center pb-4 md:pb-12" data-aos="fade-up">
-            <Image
-              className="max-w-none"
-              src={FeaturesImage}
-              width={1104}
-              height={384}
-              alt="Features"
-            />
+            <div className="relative w-full max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-4xl">
+              <Image
+                className="w-full h-auto object-contain rounded-lg"
+                src={FeaturesImage}
+                width={1104}
+                height={384}
+                alt="Features"
+                priority
+              />
+            </div>
           </div>
+          
           {/* Items */}
           <div className="mx-auto grid max-w-sm gap-12 sm:max-w-none sm:grid-cols-2 md:gap-x-14 md:gap-y-16 lg:grid-cols-3">
             
