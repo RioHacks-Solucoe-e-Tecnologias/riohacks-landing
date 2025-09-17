@@ -1,5 +1,6 @@
+import Image from "next/image";
 import VideoThumb from "@/public/images/background.png";
-import ModalVideo from "@/components/modal-video";
+import SecondaryIllustration from "@/public/images/secondary-illustration.svg";
 
 export default function HeroHome() {
   return (
@@ -63,15 +64,38 @@ export default function HeroHome() {
             </div>
           </div>
 
-          <ModalVideo
-            thumb={VideoThumb}
-            thumbWidth={1104}
-            thumbHeight={576}
-            thumbAlt="Modal video thumbnail"
-            video="videos//video.mp4"
-            videoWidth={1920}
-            videoHeight={1080}
-          />
+          {/* IMAGEM HERO SEM MODAL - APENAS DECORATIVA */}
+          <div className="relative" data-aos="fade-up" data-aos-delay={200}>
+            {/* Secondary illustration */}
+            <div
+              className="pointer-events-none absolute bottom-8 left-1/2 -z-10 -ml-28 -translate-x-1/2 translate-y-1/2"
+              aria-hidden="true"
+            >
+              <Image
+                className="md:max-w-none"
+                src={SecondaryIllustration}
+                width={1165}
+                height={1012}
+                alt="Secondary illustration"
+              />
+            </div>
+
+            {/* Imagem principal responsiva */}
+            <div className="relative overflow-hidden rounded-2xl">
+              <figure className="relative overflow-hidden rounded-2xl before:absolute before:inset-0 before:-z-10 before:bg-gradient-to-br before:from-gray-900 before:via-indigo-500/20 before:to-gray-900">
+                <Image
+                  className="w-full h-auto object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                  src={VideoThumb}
+                  width={1104}
+                  height={576}
+                  priority
+                  alt="RioHacks - Soluções tecnológicas"
+                />
+                {/* Overlay sutil */}
+                <div className="absolute inset-0 bg-gray-700/30 hover:bg-gray-700/10 transition-colors duration-500"></div>
+              </figure>
+            </div>
+          </div>
         </div>
       </div>
     </section>
