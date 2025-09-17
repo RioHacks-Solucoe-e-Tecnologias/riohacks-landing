@@ -33,18 +33,20 @@ export default function Cta() {
               um orçamento sem compromisso e descubra o que a tecnologia pode
               fazer pelo seu negócio!
             </p>
-            <div className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center">
+            
+            {/* CONTAINER DO BOTÃO RESPONSIVO */}
+            <div className="flex justify-center">
               <div data-aos="fade-up" data-aos-delay={400}>
                 <a
-                  className="btn group mb-4 w-full bg-gradient-to-r from-[#0b1a44] via-[#12285f] to-[#1c3a80] hover:from-[#1c3a80] hover:via-[#12285f] hover:to-[#0b1a44] text-white shadow-[inset_0px_1px_0px_0px_--theme(--color-white/.16)] transition-all duration-300 sm:mb-0 sm:w-auto"
+                  className="inline-flex items-center justify-center px-6 py-3 sm:px-8 sm:py-4 text-sm sm:text-base font-medium text-white bg-gradient-to-r from-[#0b1a44] via-[#12285f] to-[#1c3a80] hover:from-[#1c3a80] hover:via-[#12285f] hover:to-[#0b1a44] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group whitespace-nowrap"
                   href="https://wa.me/5593991963307"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <span className="relative inline-flex items-center">
                     Solicitar uma proposta
-                    <span className="ml-1 tracking-normal text-white/50 transition-transform group-hover:translate-x-0.5">
-                      {"->"}
+                    <span className="ml-2 tracking-normal text-white/50 transition-transform group-hover:translate-x-0.5">
+                      →
                     </span>
                   </span>
                 </a>

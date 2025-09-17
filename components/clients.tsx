@@ -343,22 +343,30 @@ export default function Clients() {
             </p>
           </div>
 
-          <div className="mx-auto grid max-w-lg grid-cols-2 gap-6 sm:max-w-none sm:grid-cols-3 md:grid-cols-4">
+          {/* GRID OTIMIZADO PARA MOBILE */}
+          <div className="mx-auto grid max-w-lg grid-cols-2 gap-3 sm:max-w-none sm:grid-cols-3 sm:gap-4 md:grid-cols-4 md:gap-6">
             {clientLogos.map((client, index) => (
               <div
                 key={index}
-                className="flex items-center justify-center rounded-md border border-gray-800/40 p-8 transition-all hover:scale-105 hover:border-indigo-500/30 cursor-pointer"
+                className="group relative flex items-center justify-center rounded-md border border-gray-800/40 p-3 sm:p-4 md:p-6 lg:p-8 transition-all duration-300 hover:scale-105 hover:border-indigo-500/30 hover:shadow-lg hover:shadow-indigo-500/10 cursor-pointer bg-gray-900/30 hover:bg-gray-900/50"
                 onClick={() => handleClientClick(client)}
               >
-                <div className="flex items-center justify-center">
-                  <Image
-                    src={client.src}
-                    alt={client.alt}
-                    width={100}
-                    height={40}
-                    className="h-16 w-auto"
-                  />
+                {/* CONTAINER DA IMAGEM RESPONSIVO */}
+                <div className="flex items-center justify-center w-full h-full">
+                  <div className="relative w-full max-w-[120px] sm:max-w-[140px] md:max-w-[160px] lg:max-w-[180px]">
+                    <Image
+                      src={client.src}
+                      alt={client.alt}
+                      width={180}
+                      height={90}
+                      className="w-full h-auto object-contain opacity-70 group-hover:opacity-100 transition-opacity duration-300 filter brightness-90 group-hover:brightness-110"
+                      priority={index < 8} // Prioriza os primeiros 8 logos
+                    />
+                  </div>
                 </div>
+                
+                {/* INDICADOR DE HOVER - OPCIONAL */}
+                <div className="absolute inset-0 rounded-md bg-gradient-to-br from-indigo-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
               </div>
             ))}
           </div>
