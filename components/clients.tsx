@@ -259,7 +259,7 @@ export default function Clients() {
       De forma artesanal e cuidadosa, esses óleos se tornam a base de <strong>sabonetes, cremes, velas, incensos</strong> e outros produtos que carregam o aroma, a força e o espírito da floresta.
 
       Ao longo dos anos, o grupo estruturou-se, firmou parcerias e conquistou reconhecimento pela sua atuação na <strong>conservação dos recursos da Amazônia</strong>.
-      Com <strong>16 membros</strong> — a maioria mulheres — as Amélias representam a <strong>força feminina</strong> à frente de um trabalho coletivo e afetuoso, em que <strong>cada produto carrega uma história de resistência e renovação</strong>.
+      Com <strong>16 membros</strong> a maioria mulheres, as Amélias representam a <strong>força feminina</strong> à frente de um trabalho coletivo e afetuoso, em que <strong>cada produto carrega uma história de resistência e renovação</strong>.
 
       A <strong>Rio Hacks</strong> foi responsável pelo <strong>desenvolvimento do site de Divulgação</strong>.
       `,

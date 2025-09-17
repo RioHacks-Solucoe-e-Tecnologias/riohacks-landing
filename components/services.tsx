@@ -59,6 +59,8 @@ export default function Features() {
           </div>
           {/* Items */}
           <div className="mx-auto grid max-w-sm gap-12 sm:max-w-none sm:grid-cols-2 md:gap-x-14 md:gap-y-16 lg:grid-cols-3">
+            
+            {/* Desenvolvimento de Sistemas sob Medida */}
             <article>
               <svg
                 className="mb-3 fill-indigo-500"
@@ -66,11 +68,10 @@ export default function Features() {
                 width={24}
                 height={24}
               >
-                <path d="M0 0h14v17H0V0Zm2 2v13h10V2H2Z" />
-                <path
-                  fillOpacity=".48"
-                  d="m16.295 5.393 7.528 2.034-4.436 16.412L5.87 20.185l.522-1.93 11.585 3.132 3.392-12.55-5.597-1.514.522-1.93Z"
-                />
+                <path d="M7 2H17C18.1 2 19 2.9 19 4V20C19 21.1 18.1 22 17 22H7C5.9 22 5 21.1 5 20V4C5 2.9 5.9 2 7 2Z" fillOpacity="0.3"/>
+                <path d="M8 6h8M8 8h8M8 10h5"/>
+                <rect x="9" y="14" width="6" height="4" rx="1"/>
+                <circle cx="12" cy="16" r="1"/>
               </svg>
               <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
                 Desenvolvimento de Sistemas sob Medida
@@ -79,6 +80,8 @@ export default function Features() {
                 Criamos software exclusivo para atender suas necessidades específicas e processos únicos. Soluções escaláveis e seguras, do conceito à implantação e manutenção.
               </p>
             </article>
+
+            {/* Integração de Sistemas */}
             <article>
               <svg
                 className="mb-3 fill-indigo-500"
@@ -86,8 +89,12 @@ export default function Features() {
                 width={24}
                 height={24}
               >
-                <path fillOpacity=".48" d="M7 8V0H5v8h2Zm12 16v-4h-2v4h2Z" />
-                <path d="M19 6H0v2h17v8H7v-6H5v8h19v-2h-5V6Z" />
+                <circle cx="8" cy="12" r="6" fillOpacity="0.2"/>
+                <circle cx="16" cy="12" r="6" fillOpacity="0.2"/>
+                <circle cx="8" cy="12" r="2"/>
+                <circle cx="16" cy="12" r="2"/>
+                <path d="M10 12h4" strokeWidth="2"/>
+                <path d="M6 10l-2-2M6 14l-2 2M18 10l2-2M18 14l2 2" strokeWidth="1"/>
               </svg>
               <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
                 Integração de Sistemas
@@ -96,6 +103,8 @@ export default function Features() {
                 Conectamos todas as suas plataformas e softwares em um ecossistema unificado. Eliminamos ilhas de informação e automatizamos fluxos entre diferentes sistemas.
               </p>
             </article>
+
+            {/* Consultoria em Transformação Digital */}
             <article>
               <svg
                 className="mb-3 fill-indigo-500"
@@ -103,11 +112,12 @@ export default function Features() {
                 width={24}
                 height={24}
               >
-                <path d="M23.414 6 18 .586 16.586 2l3 3H7a6 6 0 0 0-6 6h2a4 4 0 0 1 4-4h12.586l-3 3L18 11.414 23.414 6Z" />
-                <path
-                  fillOpacity=".48"
-                  d="M13.01 12.508a2.5 2.5 0 0 0-3.502.482L1.797 23.16.203 21.952l7.71-10.17a4.5 4.5 0 1 1 7.172 5.437l-4.84 6.386-1.594-1.209 4.841-6.385a2.5 2.5 0 0 0-.482-3.503Z"
-                />
+                <rect x="3" y="3" width="18" height="18" rx="2" fillOpacity="0.1"/>
+                <path d="M7 14l3-3 2 2 5-5" strokeWidth="2" fill="none"/>
+                <circle cx="7" cy="14" r="1"/>
+                <circle cx="10" cy="11" r="1"/>
+                <circle cx="12" cy="13" r="1"/>
+                <circle cx="17" cy="8" r="1"/>
               </svg>
               <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
                 Consultoria em Transformação Digital
@@ -116,6 +126,8 @@ export default function Features() {
                 Acompanhamos sua empresa na jornada de digitalização de processos e operações. Estratégias personalizadas para modernização tecnológica e inovação contínua.
               </p>
             </article>
+
+            {/* Gestão de Tráfego Pago */}
             <article>
               <svg
                 className="mb-3 fill-indigo-500"
@@ -123,16 +135,11 @@ export default function Features() {
                 width={24}
                 height={24}
               >
-                <path
-                  fillOpacity=".48"
-                  d="m3.031 9.05-.593-.805 1.609-1.187.594.804a6.966 6.966 0 0 1 0 8.276l-.594.805-1.61-1.188.594-.805a4.966 4.966 0 0 0 0-5.9Z"
-                />
-                <path d="m7.456 6.676-.535-.845 1.69-1.07.534.844a11.944 11.944 0 0 1 0 12.789l-.535.845-1.69-1.071.536-.845a9.944 9.944 0 0 0 0-10.647Z" />
-                <path
-                  d="m11.888 4.35-.514-.858 1.717-1.027.513.858a16.9 16.9 0 0 1 2.4 8.677 16.9 16.9 0 0 1-2.4 8.676l-.513.859-1.717-1.028.514-.858A14.9 14.9 0 0 0 14.003 12a14.9 14.9 0 0 0-2.115-7.65Z"
-                  opacity=".48"
-                />
-                <path d="m16.321 2-.5-.866 1.733-1 .5.866A22 22 0 0 1 21 12c0 3.852-1.017 7.636-2.948 10.97l-.502.865-1.73-1.003.501-.865A19.878 19.878 0 0 0 19 12a20 20 0 0 0-2.679-10Z" />
+                <circle cx="12" cy="12" r="10" fillOpacity="0.1"/>
+                <circle cx="12" cy="12" r="6" fillOpacity="0.2"/>
+                <circle cx="12" cy="12" r="2"/>
+                <path d="M12 2v4M12 18v4M2 12h4M18 12h4" strokeWidth="1"/>
+                <path d="M6.34 6.34l2.83 2.83M14.83 14.83l2.83 2.83M17.66 6.34l-2.83 2.83M9.17 14.83l-2.83 2.83" strokeWidth="1"/>
               </svg>
               <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
                 Gestão de Tráfego Pago
@@ -141,6 +148,8 @@ export default function Features() {
                 Estratégias de anúncios online para atrair o público certo e maximizar seu ROI. Campanhas otimizadas no Google, Meta e outras plataformas para converter cliques em clientes.
               </p>
             </article>
+
+            {/* Soluções em IA e ML */}
             <article>
               <svg
                 className="mb-3 fill-indigo-500"
@@ -148,11 +157,12 @@ export default function Features() {
                 width={24}
                 height={24}
               >
-                <path
-                  fillOpacity=".48"
-                  d="M12 8.8a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z"
-                />
-                <path d="m7.454 2.891.891-.454L7.437.655l-.891.454a12 12 0 0 0 0 21.382l.89.454.91-1.781-.892-.455a10 10 0 0 1 0-17.818ZM17.456 1.11l-.891-.454-.909 1.782.891.454a10 10 0 0 1 0 17.819l-.89.454.908 1.781.89-.454a12 12 0 0 0 0-21.382Z" />
+                <circle cx="12" cy="12" r="8" fillOpacity="0.1"/>
+                <circle cx="9" cy="10" r="1"/>
+                <circle cx="15" cy="10" r="1"/>
+                <path d="M12 3v2M21 12h-2M12 21v-2M3 12h2" strokeWidth="2"/>
+                <path d="M8 8l1.5 1.5M16 8l-1.5 1.5M8 16l1.5-1.5M16 16l-1.5-1.5" strokeWidth="2"/>
+                <ellipse cx="12" cy="15" rx="3" ry="1" fillOpacity="0.3"/>
               </svg>
               <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
                 Soluções em Inteligência Artificial e Machine Learning
@@ -161,6 +171,8 @@ export default function Features() {
                 Desenvolvemos modelos preditivos e sistemas inteligentes personalizados para seu negócio. Análise de dados, automação de processos e insights estratégicos sob medida.
               </p>
             </article>
+
+            {/* Desenvolvimento de Sites e E-commerce */}
             <article>
               <svg
                 className="mb-3 fill-indigo-500"
@@ -168,11 +180,13 @@ export default function Features() {
                 width={24}
                 height={24}
               >
-                <path
-                  fillOpacity=".48"
-                  d="M19 8h5v2h-5V8Zm-4 5h9v2h-9v-2Zm9 5H11v2h13v-2Z"
-                />
-                <path d="M19.406 3.844 6.083 20.497.586 15 2 13.586l3.917 3.917L17.844 2.595l1.562 1.25Z" />
+                <rect x="2" y="3" width="20" height="14" rx="2" fillOpacity="0.1"/>
+                <rect x="4" y="6" width="16" height="8" fillOpacity="0.2"/>
+                <path d="M8 10h8M8 12h6" strokeWidth="1"/>
+                <circle cx="6" cy="8" r="0.5"/>
+                <circle cx="7.5" cy="8" r="0.5"/>
+                <circle cx="9" cy="8" r="0.5"/>
+                <rect x="6" y="19" width="12" height="2" rx="1"/>
               </svg>
               <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
                 Desenvolvimento de Sites e E-commerce
@@ -181,14 +195,22 @@ export default function Features() {
                 Criação de plataformas digitais modernas, responsivas e de alta conversão. Lojas virtuais completas com integração de pagamentos e gestão de pedidos.
               </p>
             </article>
+
+            {/* Chatbot e CRM Personalizados */}
             <article>
               <svg
-               className="mb-3 fill-indigo-500"
-               xmlns="http://www.w3.org/2000/svg" 
-               width={24} 
-               height={24}
+                className="mb-3 fill-indigo-500"
+                xmlns="http://www.w3.org/2000/svg"
+                width={24}
+                height={24}
               >
-                <path d="M12 2L2 12h20L12 2z" /> {/* Ícone genérico de exemplo */}
+                <rect x="4" y="8" width="16" height="10" rx="3" fillOpacity="0.2"/>
+                <circle cx="10" cy="12" r="1"/>
+                <circle cx="14" cy="12" r="1"/>
+                <path d="M9 15s1 1 3 1 3-1 3-1" strokeWidth="1" fill="none"/>
+                <circle cx="12" cy="5" r="2" fillOpacity="0.3"/>
+                <rect x="2" y="13" width="2" height="3" rx="1"/>
+                <rect x="20" y="13" width="2" height="3" rx="1"/>
               </svg>
               <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
                 Chatbot e CRM Personalizados
@@ -198,9 +220,19 @@ export default function Features() {
               </p>
             </article>
 
+            {/* Capacitação e Treinamento Personalizados */}
             <article>
-              <svg className="mb-3 fill-indigo-500" xmlns="http://www.w3.org/2000/svg" width={24} height={24}>
-                <path d="M5 3h14v18H5V3z" />
+              <svg
+                className="mb-3 fill-indigo-500"
+                xmlns="http://www.w3.org/2000/svg"
+                width={24}
+                height={24}
+              >
+                <rect x="3" y="4" width="18" height="12" rx="2" fillOpacity="0.1"/>
+                <path d="M7 8h10M7 10h8M7 12h6" strokeWidth="1"/>
+                <circle cx="20" cy="18" r="3" fillOpacity="0.3"/>
+                <path d="M18 18h4M20 16v4" strokeWidth="1"/>
+                <rect x="10" y="16" width="4" height="6" fillOpacity="0.2"/>
               </svg>
               <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
                 Capacitação e Treinamento Personalizados
@@ -210,14 +242,21 @@ export default function Features() {
               </p>
             </article>
 
+            {/* Realização de Eventos Técnicos */}
             <article>
-              <svg 
-              className="mb-3 fill-indigo-500" 
-              xmlns="http://www.w3.org/2000/svg" 
-              width={24} 
-              height={24}
+              <svg
+                className="mb-3 fill-indigo-500"
+                xmlns="http://www.w3.org/2000/svg"
+                width={24}
+                height={24}
               >
-                <path d="M4 6h16v12H4z" />
+                <circle cx="12" cy="12" r="8" fillOpacity="0.1"/>
+                <rect x="8" y="8" width="8" height="8" rx="1" fillOpacity="0.2"/>
+                <circle cx="10" cy="10" r="1"/>
+                <circle cx="14" cy="10" r="1"/>
+                <circle cx="10" cy="14" r="1"/>
+                <circle cx="14" cy="14" r="1"/>
+                <path d="M7 7l10 10M17 7L7 17" strokeWidth="0.5" fillOpacity="0.5"/>
               </svg>
               <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
                 Realização de Eventos Técnicos
@@ -226,6 +265,7 @@ export default function Features() {
                 Organização completa de workshops, hackathons e conferências tecnológicas. Desde a concepção temática até a gestão de participantes e infraestrutura.
               </p>
             </article>
+
           </div>
         </div>
       </div>
