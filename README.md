@@ -1,30 +1,49 @@
-# Free React / Next.js landing page template
+<p align="center">
+  <img src="./public/images/logo.svg" alt="RioHacks Logo" width="200">
+</p>
 
-![Open React / Next.js template preview](https://github.com/user-attachments/assets/522a5e46-2a0e-48ca-80eb-87c7fa58f3ea)
+<h1 align="center">RioHacks - Business Solutions, Innovation & Technology Landing Page</h1>
 
-**Open** is a **free React / Next.js landing page template built with Tailwind CSS** for developers/makers who want to create a quick and professional landing page for their open source projects, SaaS products, online services, and more.
+![Static Badge](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=61DAFB&labelColor=black)
+![Static Badge](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=F7DF1E&labelColor=black)
+![Static Badge](https://img.shields.io/badge/nodejs-5FA04E?style=flat&logo=nodedotjs&logoColor=5FA04E&labelColor=black)
+![Static Badge](https://img.shields.io/badge/npm-CB3837?style=flat&logo=npm&logoColor=CB3837&labelColor=black)
+![Static Badge](https://img.shields.io/badge/nextjs-white?style=flat&logo=nextdotjs&logoColor=white&labelColor=black)
+![Static Badge](https://img.shields.io/badge/css-663399?style=flat&logo=css&logoColor=663399&labelColor=black)
+![Static Badge](https://img.shields.io/badge/vercel-000000?style=flat&logo=vercel&logoColor=white&labelColor=black)
+![GitHub Repo stars](https://img.shields.io/github/stars/RioHacks-Solucoe-e-Tecnologias/riohacks-landing?style=flat&logo=github&logoColor=white&labelColor=black)
 
-**UPDATE 2025-02-04** Added Tailwind v4 support!
 
-Use it for whatever you want, and be sure to reach us out on [Twitter](https://twitter.com/Cruip_com) if you build anything cool/useful with it.
+![RioHacks Landing Page Preview](./public/images/LandingPage-completa.png) is a professional **React / Next.js** landing page built with **Tailwind CSS** for a startup focused on local and regional innovation in **Santarém-PA, Brazil**. This landing page showcases business solutions, technological innovation services, and digital transformation consulting.
 
-Created and maintained with ❤️ by [Cruip.com](https://cruip.com).
+## About RioHacks
 
-_Version 1.0.0 built with the Cruip CSS is available [here](https://github.com/cruip/open-react-template/releases/tag/1.0.0)._
-_Version 2.0.3 built with Tailwind CSS and React + Vite is available [here](https://github.com/cruip/open-react-template/releases/tag/2.0.3)._
-_Version 3.3.0 (before redesign) built with Tailwind CSS and Next.js is available [here](https://github.com/cruip/open-react-template/releases/tag/3.3.0)._
+RioHacks is a startup dedicated to business solutions, innovation, and technology, specializing in digital transformation for companies in the Amazon region. We focus on creating customized software solutions, system integrations, AI/ML implementations, and comprehensive digital consulting services.
 
 ## Live demo
 
-Check the live demo here 👉️ [https://open.cruip.com/](https://open.cruip.com/)
+Check the live demo here 👉️ [ https://riohacks.com.br/]( https://riohacks.com.br/)
 
-## Open PRO
+## Features
 
-[![Open Pro](https://github.com/user-attachments/assets/2062c728-95f1-4d59-aa2d-d63556f625d5)](https://cruip.com/)
+- **Modern Design**: Clean, professional interface optimized for business services
+- **Responsive**: Fully responsive design that works on all devices
+- **Service Showcase**: Comprehensive display of technology services offered
+- **Client Portfolio**: Dynamic client showcase with modal interactions
+- **Contact Integration**: Direct WhatsApp integration and contact forms
+- **Hackatur Section**: Information about regional innovation events
+- **Legal Pages**: Complete privacy policy and terms of service
+- **Performance Optimized**: Built with Next.js 15 and optimized images
 
-## Design files
+## Technology Stack
 
-If you need the design files, you can download them from Figma's Community 👉 https://bit.ly/401KSUS
+This project is built with:
+- **Next.js 15** - React framework with App Router
+- **React 18** - Modern React with Server Components
+- **TypeScript** - Type-safe JavaScript
+- **Tailwind CSS v4** - Utility-first CSS framework
+- **Next/Image** - Optimized image loading
+- **AOS** - Animate On Scroll library
 
 ## Usage
 
@@ -52,42 +71,102 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
+## Page Structure
+
+```text
+├── app/                 # Next.js App Router (main pages and routes)
+│   ├── api/hello        # Example API route (sample endpoint for testing)
+│   ├── css/             # Global and module-specific CSS files
+│   ├── legal/           # Privacy policy and terms of service pages
+├── components/          # Reusable React components
+│   ├── ui/              # UI primitives and styled components
+├── public/              # Static assets served at the site root
+│   ├── fonts/           # Custom web fonts
+│   ├── images/          # Landing page images
+│   └── videos/          # Video files used on the site
+├── extracted/           # Extracted or generated assets (e.g., temporary or build-related files)
+└── utils/               # Helper functions and utility modules
+```
+## Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Start production server
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
+
 ### Learn More
 
 To learn more about Next.js, take a look at the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [React Documentation](https://react.dev/) - learn about React.
+- [Tailwind CSS](https://tailwindcss.com/docs/installation/using-vite) - utility-first CSS framework.
+- [TypeScript ](https://www.typescriptlang.org/docs/) - typed JavaScript.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Deployment
 
-### Deploy on Vercel
+The application is deployed on [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) with custom domain configuration pointing to riohacks.com.br through HostGator DNS management.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### For deployment details:
+
+- **Plataform**: Vercel
+- **Domain**: riohacks.com.br (configured via HostGator DNS)
+- **Domain**: `npm run build`
+- **Framework**: Next.js (auto-detected)
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-### Support notes
+### Development Team
 
-This template has been developed with the App Router (`app`) and React Server Components. If you’re unfamiliar with these beta features, you can find more information about them on the Next.js beta documentation page. So, please note that any request dealing with React (e.g. extra features, customisations, et cetera) is to be considered out of the support scope.
+This landing page was developed by:
+<div align="center">
+  <table>
+    <tr>
+      <td align="center" style="padding:20px;">
+        <img src="./public/images/development/jheickson.jpg"
+        width="150" height="150"
+        style="border-radius:50%; object-fit:cover;"
+        alt="Jheickson"/>
+        <br><br>
+        <b>Jheickson</b><br>
+        <a href="https://github.com/Jheickson">GitHub</a><br>
+        jheickson@protonmail.com<br>
+        Front-end Developer
+      </td>
+      <td align="center" style="padding:20px;">
+        <img src="./public/images/development/amiraldo.jpeg"
+        width="150" height="150"
+        style="border-radius:50%; object-fit:cover;"
+        alt="Amiraldo"/>
+        <br><br>
+        <b>Amiraldo Ferreira</b><br>
+        <a href="https://github.com/amiralo01">GitHub</a><br>
+        amiraldo.f19@gmail.com<br>
+        Front-end Developer
+      </td>
+    </tr>
+  </table>
+</div>
 
-For more information about what support covers, please see our (FAQs)[https://cruip.com/faq/].
+## Support Notes
 
-## Credits
+This template has been developed with the Next.js App Router and React Server Components. The codebase includes:
 
-- [Nucleo](https://nucleoapp.com/)
+- Server and Client Components architecture
+- Optimized image handling with next/image
+- Responsive design patterns
+- Accessibility considerations
+- SEO optimization
 
 ## Terms and License
 
-- Released under the [GPL](https://www.gnu.org/licenses/gpl-3.0.html).
-- Copyright 2024 [Cruip](https://cruip.com/).
+- Copyright 2025 RioHacks - Business Solutions, Innovation & Technology
 - Use it for personal and commercial projects, but please don’t republish, redistribute, or resell the template.
-- Attribution is not required, although it is really appreciated.
+- Attribution  is appreciated but not required.
 
-## About Us
+## Contact
 
-We're an Italian developer/designer duo creating high-quality design/code resources for developers, makers, and startups.
-
-## Stay in the loop
-
-If you would like to know when we release new resources, you can follow [@pacovitiello](https://x.com/pacovitiello) and [@DavidePacilio](https://x.com/DavidePacilio) on X, or you can subscribe to our [newsletter](https://cruip.com/newsletter/).
+For business inquiries and services:
+- **Website**: [https://riohacks.com.br/](https://riohacks.com.br/)
+- **WhatsApp**: [+55 93 99196-3307](https://wa.me/5593991963307)
+- **Location**: Av. Mendonça Furtado, 2417, Aldeia, Santarém/PA
