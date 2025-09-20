@@ -123,7 +123,7 @@ This landing page was developed by:
   <table>
     <tr>
       <td align="center" style="padding:20px;">
-        <img src="./public/images/development/jheickson.jpg"
+        <img src="./public/images/development/jheickson.png"
         width="150" height="150"
         style="border-radius:50%; object-fit:cover;"
         alt="Jheickson"/>
@@ -134,7 +134,7 @@ This landing page was developed by:
         Front-end Developer
       </td>
       <td align="center" style="padding:20px;">
-        <img src="./public/images/development/amiraldo.jpeg"
+        <img src="./public/images/development/amiraldo.png"
         width="150" height="150"
         style="border-radius:50%; object-fit:cover;"
         alt="Amiraldo"/>
