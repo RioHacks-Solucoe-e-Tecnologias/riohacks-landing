@@ -15,6 +15,13 @@ import ClientLogo10 from "@/public/images/logo-amelias.png";
 import ClientLogo11 from "@/public/images/logo-casadoivo.png";
 import ClientLogo12 from "@/public/images/logo-vivervideos.png";
 import ClientLogo13 from "@/public/images/logo-autseg.png";
+import ClientLogo14 from "@/public/images/logo-maia.png";
+import ClientLogo15 from "@/public/images/logo-aetha.png";
+import ClientLogo16 from "@/public/images/logo-soil.png";
+import ClientLogo17 from "@/public/images/logo-guanabara.png";
+import ClientLogo18 from "@/public/images/logo-ribba.png";
+import ClientLogo19 from "@/public/images/logo-nossasaude.png";
+import ClientLogo20 from "@/public/images/logo-amorsaude.png";
 import ClientModal from "@/components/clientmodal";
 
 // Imagens da NortePlay
@@ -89,6 +96,34 @@ import Vivervideos2 from "@/public/images/vivervideos/vivervideos2.jpeg";
 import AutSeg0 from "@/public/images/autseg/autseg0.png";
 import AutSeg1 from "@/public/images/autseg/autseg1.png";
 import AutSeg2 from "@/public/images/autseg/autseg2.png";
+
+// Imagens da Maia Odontologia
+import Maia0 from "@/public/images/maiaodontologia/maia0.png";
+import Maia1 from "@/public/images/maiaodontologia/maia1.png";
+import Maia2 from "@/public/images/maiaodontologia/maia2.png";
+import Maia3 from "@/public/images/maiaodontologia/maia3.png";
+
+// Imagens da Aetha
+import Aetha0 from "@/public/images/aetha/aetha0.jpg";
+
+// Imagens do Açaí Soil
+import Soil0 from "@/public/images/soil/soil0.png";
+
+// Imagens do Guanabara
+import Guanabara0 from "@/public/images/guanabara/guanabara0.png";
+
+// Imagens do Ribba
+import Riba0 from "@/public/images/ribba/riba0.png";
+import Riba1 from "@/public/images/ribba/riba1.png";
+import Riba2 from "@/public/images/ribba/riba2.png";
+
+// Imagens do Nossa Saúde
+import NossaS0 from "@/public/images/nossasaude/nossas0.png";
+
+// Imagens do Amor Saúde
+import AmorS0 from "@/public/images/amorsaude/amors0.png";
+
+import { Description } from "@headlessui/react";
 
 export default function Clients() {
   const [selectedClient, setSelectedClient] = useState<any>(null);
@@ -303,6 +338,87 @@ export default function Clients() {
       `,
       images: [AutSeg0, AutSeg1, AutSeg2]
     },
+    {
+      src: ClientLogo14,
+      alt: "Maia Odontologia",
+      description: `
+      <strong>Maia Odontologia</strong> oferece <strong>atendimento odontológico especializado</strong> com foco em <strong>conforto, precisão</strong> e <strong>sorrisos duradouros</strong>.  
+
+      Com <strong>anos de experiência</strong> e constante <strong>inovação tecnológica</strong>, a clínica garante <strong>cuidado humanizado</strong> e resultados de excelência.  
+
+      Seu <strong>sorriso é a prioridade</strong>: agende uma consulta e <strong>transforme sua saúde bucal</strong> com profissionais que realmente se importam.  
+
+      A <strong>Rio Hacks</strong> foi responsável pelo <strong>desenvolvimento do site de divulgação</strong>.  
+      `,
+      images: [Maia0, Maia1, Maia2, Maia3]
+    },
+    {
+      src: ClientLogo15,
+      alt: "Aetha",
+      description:`
+      <strong>AETHA</strong> é a <strong>Associação dos Empreendedores do Turismo em Meios de Hospedagem de Alter do Chão</strong>, unindo pousadas comprometidas com o <strong>turismo de qualidade</strong>.  
+
+      No <strong>“Caribe Brasileiro”</strong>, a região <strong>não cobra taxas de turismo</strong>, garantindo uma viagem mais econômica.  
+
+      As pousadas associadas oferecem <strong>preços justos</strong> e <strong>serviços de excelência</strong>, proporcionando uma experiência inesquecível na vila de Alter do Chão. 
+
+      `,
+      images: [Aetha0]
+    },
+    {
+      src: ClientLogo16,
+      alt: "AçaíSoil",
+      description:`
+      <strong>Açaí Soil</strong> produz <strong>substrato orgânico para plantas</strong>, feito a partir de <strong>caroços de açaí reaproveitados</strong> diretamente da Amazônia.  
+
+      Totalmente <strong>biodegradável</strong>, o substrato <strong>enriquece naturalmente o solo</strong> e contribui para um cultivo mais equilibrado e sustentável.  
+
+      Com foco em <strong>economia circular</strong>, transforma resíduos em <strong>solo fértil</strong>, reduzindo o desperdício e fortalecendo a <strong>agricultura ecológica</strong>.  
+      `,
+      images: [Soil0]
+    },
+    {
+      src: ClientLogo17,
+      alt: "Guanabara",
+      description:`
+      <strong>Guanabara</strong> é uma <strong>agência full service</strong> com mais de <strong>15 anos de experiência</strong> em <strong>comunicação e marketing</strong>, criando estratégias inovadoras que geram resultados no ambiente físico e digital.  
+
+      Oferece <strong>planejamento estratégico</strong>, <strong>marketing digital</strong>, <strong>assessoria de imprensa</strong>, <strong>eventos</strong> e <strong>ativação de marcas</strong>, sempre com foco em engajamento e fortalecimento da reputação.  
+      `,
+      images: [Guanabara0]
+    },
+    {
+      src: ClientLogo18,
+      alt: "Rede Riba",
+      description: `
+      <strong>Rede Riba</strong> é uma <strong>aliança dinâmica</strong> que conecta <strong>talentos e negócios locais</strong> para <strong>impulsionar a bioeconomia</strong> e <strong>transformar vidas</strong> na região.  
+
+      Reúne <strong>empreendedores</strong>, <strong>pesquisadores</strong>, <strong>instituições públicas e privadas</strong> e toda a comunidade em um <strong>ecossistema colaborativo</strong> de inovação e desenvolvimento sustentável.  
+
+      A <strong>Rio Hacks</strong> foi responsável pelo <strong>desenvolvimento do site de divulgação</strong>.  
+      `,
+      images: [Riba0, Riba1, Riba2]
+    },
+    {
+      src: ClientLogo19,
+      alt: "Nossa Saúde",
+      description: `
+      <strong>Nossa Saúde</strong> é uma <strong>clínica completa</strong> com <strong>preços populares</strong> em exames e consultas para cuidar de você e de toda a sua família.  
+
+      Oferece diversas especialidades, como <strong>Cardiologia</strong>, <strong>Pediatria</strong>, <strong>Dermatologia</strong>, <strong>Ortopedia</strong> e <strong>Ginecologia</strong>, garantindo um <strong>atendimento humanizado e de qualidade</strong>.  
+      `,
+      images: [NossaS0]
+    },
+    {
+      src: ClientLogo20,
+      alt: "Amor Saúde",
+      description: `
+      <strong>Amor Saúde</strong> oferece <strong>atendimento médico e odontológico rápido</strong>, além de <strong>exames laboratoriais</strong>, <strong>exames de imagem</strong> e <strong>cirurgias eletivas de baixa complexidade</strong>.  
+
+      Com foco em <strong>qualidade e acessibilidade</strong>, garante consultas e exames sem burocracia, ideais para quem não tem plano de saúde ou não pode esperar por longas filas de atendimento.
+      `,
+      images: [AmorS0]
+    }
   ];
 
   const handleClientClick = (client: any) => {
