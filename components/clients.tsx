@@ -19,9 +19,10 @@ import ClientLogo14 from "@/public/images/logo-maia.png";
 import ClientLogo15 from "@/public/images/logo-aetha.png";
 import ClientLogo16 from "@/public/images/logo-soil.png";
 import ClientLogo17 from "@/public/images/logo-guanabara.png";
-import ClientLogo18 from "@/public/images/logo-ribba.png";
+import ClientLogo18 from "@/public/images/logo-riba.png";
 import ClientLogo19 from "@/public/images/logo-nossasaude.png";
 import ClientLogo20 from "@/public/images/logo-amorsaude.png";
+import ClientLogo21 from "@/public/images/logo-sitehackatur.png";
 import ClientModal from "@/components/clientmodal";
 
 // Imagens da NortePlay
@@ -107,7 +108,7 @@ import Maia3 from "@/public/images/maiaodontologia/maia3.png";
 import Aetha0 from "@/public/images/aetha/aetha0.jpg";
 
 // Imagens do Açaí Soil
-import Soil0 from "@/public/images/soil/soil0.png";
+import Soil0 from "@/public/images/soil/soil0.jpg";
 
 // Imagens do Guanabara
 import Guanabara0 from "@/public/images/guanabara/guanabara0.png";
@@ -122,6 +123,13 @@ import NossaS0 from "@/public/images/nossasaude/nossas0.png";
 
 // Imagens do Amor Saúde
 import AmorS0 from "@/public/images/amorsaude/amors0.png";
+
+// Imagens do Hackatur
+import Hackatur0 from "@/public/images/hackatur/hackatur0.png";
+import Hackatur1 from "@/public/images/hackatur/hackatur1.jpg";
+import Hackatur2 from "@/public/images/hackatur/hackatur2.png";
+import Hackatur3 from "@/public/images/hackatur/hackatur3.png";
+import Hackatur4 from "@/public/images/hackatur/hackatur4.png";
 
 import { Description } from "@headlessui/react";
 
@@ -418,6 +426,18 @@ export default function Clients() {
       Com foco em <strong>qualidade e acessibilidade</strong>, garante consultas e exames sem burocracia, ideais para quem não tem plano de saúde ou não pode esperar por longas filas de atendimento.
       `,
       images: [AmorS0]
+    },
+    {
+      src: ClientLogo21,
+      alt: "Hackatur",
+      description: `
+      <strong>Hackatur</strong> é um <strong>movimento de inovação</strong> que conecta <strong>jovens, startups e empreendedores</strong> às demandas reais do mercado, promovendo o <strong>desenvolvimento sustentável da Amazônia</strong>.  
+
+      Por meio de <strong>eventos e ações sociais</strong>, reúne projetos inovadores, fortalece talentos locais e gera <strong>oportunidades de emprego e renda</strong>, impulsionando a economia regional.  
+
+      A <strong>Rio Hacks</strong> foi responsável pelo <strong>desenvolvimento do site de divulgação</strong>.
+      `,
+      images: [Hackatur0, Hackatur1, Hackatur2, Hackatur3, Hackatur4]
     }
   ];
 
@@ -476,7 +496,7 @@ export default function Clients() {
                       width={180}
                       height={90}
                       className="w-full h-auto object-contain opacity-70 group-hover:opacity-100 transition-opacity duration-300 filter brightness-90 group-hover:brightness-110"
-                      priority={index < 8} // Prioriza os primeiros 8 logos
+                      priority={index < 10} // Prioriza os primeiros 8 logos
                     />
                   </div>
                 </div>
