@@ -1,0 +1,31 @@
+# Define os serviços (contêineres) que compõem sua aplicação.
+services:
+  # Nome do serviço para a aplicação Next.js.
+  riohacks-landing-page:
+    # Constrói a imagem a partir do Dockerfile no diretório atual ('.').
+    build: .
+    # Nome para o contêiner, para facilitar a identificação.
+    container_name: riohacks-landing-page-container
+    # Mapeia a porta 3000 do contêiner para a porta 3000 da sua máquina local.
+    expose:
+      - 3000
+    # Define as variáveis de ambiente para o contêiner.
+    environment:
+      - NODE_ENV=production
+    # Monta volumes para sincronizar arquivos entre a máquina local e o contêiner.
+    volumes:
+      # Mapeia o diretório atual da sua máquina para o diretório /app no contêiner.
+      # Isso garante que as alterações no seu código (incluindo a pasta src)
+      # sejam refletidas instantaneamente no contêiner, permitindo o hot-reloading.
+      - .:/app
+      # Adiciona node_modules como um volume anônimo para evitar que a pasta
+      # node_modules local sobrescreva a que foi instalada dentro do contêiner.
+      - /app/node_modules
+    labels:
+        - "traefik.enable=true"
+        - "traefik.docker.network=web"
+        - "traefik.http.routers.riohacks-landing-page.rule=Host(`riohacks.com.br`)"
+        - "traefik.http.routers.riohacks-landing-page.tls=true"
+        - "traefik.http.routers.riohacks-landing-page.tls.certresolver=lets-encrypt"
+        - "traefik.http.routers.riohacks-landing-page.service=riohacks-landing-page"
+        - "traefik.http.services.riohacks-landing-page.loadbalancer.server.port=3000"
